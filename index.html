@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RatCoin Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loader" class="loader">
+        <img src="https://i.ibb.co/kgxdGqs/RAAAAAAAAAAAATCuette-of-a-rat-on-xl-1024-v1-0-photoaidcom-cropped.png" alt="Loading Image">
+        <p>Загрузка...</p>
+    </div>
+    <div id="reward" class="reward hidden">
+        <p>Вы получили <span id="reward-amount"></span> RatCoin!</p>
+        <button id="claim-btn">Забрать награду</button>
+    </div>
+    <div id="main" class="main hidden">
+        <div class="balance-window">
+            <p>Ваш баланс: <span id="balance-amount"></span> RatCoin</p>
+        </div>
+        <div class="logo-container">
+            <img src="https://i.ibb.co/kBhv8HZ/813670.png" alt="Logo">
+        </div>
+        <div class="tabs">
+            <button id="home-tab" class="tab-btn">Главная</button>
+            <button id="tasks-tab" class="tab-btn">Задания</button>
+            <button class="tab-btn">Airdrop</button>
+        </div>
+    </div>
+
+    <div id="tasks" class="tasks hidden">
+        <h2>Задания</h2>
+        <div class="task">
+            <p>Подпишитесь на наш <a href="https://t.me/YourTelegramChannel" target="_blank">Telegram-канал</a> и получите 500 RatCoin!</p>
+            <button id="subscribe-btn">Подписаться</button>
+        </div>
+        <div class="tabs">
+            <button id="home-tab-tasks" class="tab-btn">Главная</button>
+            <button id="tasks-tab-tasks" class="tab-btn">Задания</button>
+            <button class="tab-btn">Airdrop</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
